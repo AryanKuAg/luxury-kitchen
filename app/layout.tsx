@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Form / Matter — Modern Kitchens + Living Spaces',
   description:
     'Bespoke kitchens, timeless materials, and architectural living spaces made around you.',
+  icons: {
+    icon: 'favicon.svg',
+  },
 };
 
 export default function RootLayout({
