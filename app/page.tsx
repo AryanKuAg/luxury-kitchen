@@ -43,6 +43,13 @@ const headingBaseClasses =
 
 function Hero() {
   const [videoReady, setVideoReady] = useState(false);
+
+  // onReady is the only signal that clears the intro overlay, and ScrollyVideo's
+  // HTML5 path never fires it, so fall back to a timer.
+  useEffect(() => {
+    const watchdog = window.setTimeout(() => setVideoReady(true), 4000);
+    return () => window.clearTimeout(watchdog);
+  }, []);
   const [activeHeading, setActiveHeading] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const activeHeadingRef = useRef(0);
