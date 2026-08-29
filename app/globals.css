@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'Avenir Next Condensed', 'Arial Narrow', 'Helvetica Neue', Arial,
+    sans-serif;
+  --animate-loader-progress: loader-progress 1.8s ease-in-out infinite alternate;
+
+  @keyframes loader-progress {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(240%);
+    }
+  }
+}
