@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.esm.jsx';
 
 const heroVideo =
-  'https://d8j0ntlcm91z4.cloudfront.net/user_3Hcm18Q4PmC8GZzT4D0q8fyTyTL/hf_20260825_142839_93f5d566-c16d-4016-9c08-405bcc75aaae.mp4';
+  'https://sites.framerate.space/template-assets/luxury-kitchen/hero.mp4';
 
 const heroHeadings = [
   ['DESIGNED AROUND', 'THE WAY YOU LIVE'],
