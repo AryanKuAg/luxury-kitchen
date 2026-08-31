@@ -47,7 +47,7 @@ function Hero() {
   // onReady is the only signal that clears the intro overlay, and ScrollyVideo's
   // HTML5 path never fires it, so fall back to a timer.
   useEffect(() => {
-    const watchdog = window.setTimeout(() => setVideoReady(true), 4000);
+    const watchdog = window.setTimeout(() => setVideoReady(true), Math.max(0, 4000 - performance.now()));
     return () => window.clearTimeout(watchdog);
   }, []);
   const [activeHeading, setActiveHeading] = useState(0);
